@@ -10,8 +10,8 @@ fn prompt(guesses_left: i32, guess: &str) {
 
 fn main() {
     println!("Welcome to cis1905 Hangman!");
-    let target_word = "HANGMAN".to_string();
-    let mut guessed_word = "-------".to_string();
+    let target_word = String::from("HANGMAN");
+    let mut guessed_word = String::from("-------");
     let mut guesses_left = 5;
 
     while guesses_left > 0 && guessed_word != target_word {
